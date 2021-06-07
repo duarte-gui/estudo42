@@ -14,7 +14,7 @@ void	p_lines(char l_block, char m_block, char r_block, int x)
 
 void	rush(int x, int y)
 {
-	if (x && y > 0)
+	if (x >0 && y > 0)
 	{
 		p_lines('A', 'B', 'A', x);
 		while (--y > 1)
