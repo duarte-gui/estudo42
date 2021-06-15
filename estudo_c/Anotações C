@@ -1,0 +1,83 @@
+Pessoal, segue as anotações da call que fizemos sobre introdução ao C
+
+Programa - uma/várias Função
+
+Entrada -> valores ou não
+Processamento -> cálculos
+    -> Comandos -> colocamos dentro de uma função
+Saída -> O que eu espero (resultado)
+
+Principais tipos
+- void    -> vazio - nenhuma dado;
+- int    -> inteiro    (ex: 1, 2, -3, 0)
+- float    -> decimais (ex: 4.56; 3.89; 0.8)
+- double-> decimais (maior precisão, capacidade maior)
+- char    -> caracteres - ascii -> 'k'
+    - **string (não tem string em C)
+    -> O que é o string?
+        -> É uma cadeia de 'char's
+
+Declarando variáveis / Nomenclatura
+    <tipo> nome_da_minha_variavel;
+    int    numero;
+    char letra;
+Atribuindo valor na variávei (=)
+    numero = 100;
+    letra = 'k';
+
+Declaração/Nomenclatura da função
+<tipo_retorno> nome_da_função (<tipo_da_variavel_de_entrada> nome_variavel)
+{
+    <corpo da função>
+
+    return <o_retorno_em_si>
+}
+
+Exemplo:
+int    multiplicacao (int numero_1, int numero_2)
+{
+    // Por baixo dos panos acontece algo parecido com:
+        // int numero_01 = (valor que eu recebi no primeiro parâmetro)
+        // int numero_02 = (valor que eu recebi no segundo parâmetro)
+
+    int resultado;
+    resultado = numero_01 * numero_02;
+
+    return resultado;
+}
+
+Invocando/chamando/executar uma função
+    nome_função(<parametros>);
+
+Exemplo:
+multiplicacao (5, 7); // Vai me retornar 35
+
+
+O que é a função main()
+    -> O ponto de partida do seu programa
+
+Bibliotecas
+-> Variáves e funções prontas para serem utilizadas
+    -> Com o âmbito de facilitar/agilizar a escrita do código
+
+Função write()
+    -> Recebe 3 parâmetros
+    -> sendo o segundo, o endereço da variável (&)
+    -> e o terceiro, quantas posições a frente quero imprimir
+
+if - se
+Declaração/Nomenclatura (if)
+if (<condição_lógica>)
+{
+    // executa se for verdadeiro
+}
+else
+{
+    // executa se for falso
+}
+
+Declaração/Nomenclatura (while)
+while (<condição_lógica>)
+{
+    // o que será executado
+}
